@@ -8,12 +8,7 @@ namespace BinarySearch
     {
         static void Main(string[] args)
         {
-            var numberRangeToGuess = new int[1000000];
-            
-            for (int i = 0; i <= 999999; i++)
-            {
-                numberRangeToGuess[i] = i;
-            }
+            var numberRangeToGuess = Enumerable.Range(0, 999999).ToArray();
 
             int answer = GuessANumber(numberRangeToGuess, 999994);
             //int answer = Array.BinarySearch(numberRangeToGuess, 999994);
